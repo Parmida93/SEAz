@@ -10,11 +10,17 @@ class Test
         int a = 5;
         int b = 6;
         int expected = 11;
+        int expected3 = -1;
         BasicMath bm = new BasicMath();
         int result = bm.sum(a, b);
+        int result3 = bm.subtract(a, b);
         if (result == expected)
         {
             System.out.println("Sum: OK");
+        }
+        else if(result3 == expected3)
+        {
+            System.out.println("Subtract: OK");
         }
         else
         {
