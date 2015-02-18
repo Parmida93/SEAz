@@ -18,10 +18,6 @@ class Test
         {
             System.out.println("Sum: OK");
         }
-        else if(result3 == expected3)
-        {
-            System.out.println("Subtract: OK");
-        }
         else
         {
             System.out.println("Sum: Failed, expected = " + expected + ", result = " + result);
