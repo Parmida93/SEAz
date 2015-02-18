@@ -10,10 +10,10 @@ class Test
         int a = 5;
         int b = 6;
         int expected = 11;
-        int expected3 = -1;
+		int expectedMult = 30;
         BasicMath bm = new BasicMath();
         int result = bm.sum(a, b);
-        int result3 = bm.subtract(a, b);
+		int resultMult = bm.mult(a, b);
         if (result == expected)
         {
             System.out.println("Sum: OK");
@@ -21,6 +21,15 @@ class Test
         else
         {
             System.out.println("Sum: Failed, expected = " + expected + ", result = " + result);
+        }
+		
+		if (resultMult == expectedMult)
+        {
+            System.out.println("Mult: OK");
+        }
+        else
+        {
+            System.out.println("Mult: Failed, expected = " + expectedMult + ", result = " + resultMult);
         }
     }
 }
